@@ -1,1 +1,5 @@
-problems.txt
+1.使用load data local file 'file_path/file_name' into table table_name;
+	的时候提示：
+	The used command is not allowed with this MySQL version
+	更改启动client方式  mysql -uroot -> mysql -uroot --local-infiel。
+	问题解决！
