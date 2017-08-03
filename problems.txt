@@ -3,3 +3,11 @@
 	The used command is not allowed with this MySQL version
 	更改启动client方式  mysql -uroot -> mysql -uroot --local-infiel。
 	问题解决！
+
+2. insert into shop values((1,'a', 5.6),(2, 'b', 4.9)....)
+	Column count doesn't match value count at row 1
+	-> insert into shop values(1,'a', 5.6),(2, 'b', 4.9)
+	所以values 后面跟着各个 列表即可
+
+3. 在使用聚合函数的时候比如max  min 这种后面跟group by时候在前面select 的变量 没有出现在聚合函数中的
+	都要放在group by 的后面，放在group by后面的 不一定出现在前面select中
