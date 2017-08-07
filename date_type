@@ -1,0 +1,34 @@
+approximate
+英 [əˈprɒksɪmət] 美 [əˈprɑ:ksɪmət]
+
+adj.
+约莫的，大概的;极相似的;[植]相近但不连接的
+
+vi.
+接近于;近似于
+
+vt.
+靠近;使接近;使结合
+
+synonym
+英 [ˈsɪnənɪm] 美 [ˈsɪnəˌnɪm]
+
+n.
+同义词
+
+parentheses
+英 [pəˈrenθəsi:z] 美 [pə'renθəsi:z]
+
+n.
+圆括号，插入语，插曲（ parenthesis的名词复数 ）
+
+DECIMAL apply equally to NUMERIC
+
+If strict SQL mode is enabled, MySQL rejects the out-of-range value with an error, and the insert fails, in accordance with the SQL standard.
+
+If no restrictive modes are enabled, MySQL clips the value to the appropriate endpoint of the column data type range and stores the resulting value instead.
+
+
+MySQL converts TIMESTAMP values from the current time zone to UTC for storage, and back from UTC to the current time zone for retrieval. (This does not occur for other types such as DATETIME.)
+
+When CHAR values are stored, they are right-padded with spaces to the specified length. When CHAR values are retrieved, trailing spaces are removed 
