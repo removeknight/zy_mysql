@@ -20,7 +20,7 @@ create database db_name;
 		);
 
 --  从文本中批量导入数据,
---  使用load data local file 'file_path/file_name' into table table_name;
+--  使用load data local infile 'file_path/file_name' into table table_name;
 -- 	的时候提示：
 -- 	The used command is not allowed with this MySQL version
 -- 	更改启动client方式  mysql -uroot -> mysql -uroot --local-infiel。
@@ -36,4 +36,19 @@ or 或者 and 可以使用在语句中。
 select * from shop where price = @min_price union select * from shop where price = @max_price;
 
 
+-- If you use a group function in a statement containing no GROUP BY clause, 
+-- it is equivalent to grouping on all rows. For more information,
 
+COUNT(expr)
+
+Returns a count of the number of non-NULL values of expr in the rows retrieved by a SELECT statement. The result is a BIGINT value.
+
+COUNT(*) is somewhat different in that it returns a count of the number of rows retrieved, whether or not they contain NULL values.
+
+COUNT(DISTINCT expr,[expr...])
+
+Returns a count of the number of rows with different non-NULL expr values.
+
+If there are no matching rows, COUNT(DISTINCT) returns 0.
+
+mysql> SELECT COUNT(DISTINCT results) FROM student;
